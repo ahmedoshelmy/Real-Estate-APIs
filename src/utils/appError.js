@@ -1,0 +1,12 @@
+class AppError extends Error {
+  constructor(message, statusCode) {
+    super(message);
+    this.statusCode = statusCode;
+    this.status = statusCode.toString().startsWith('4') ? 'fail' : 'error';
+    this.isOperational = true;
+
+    Error.captureStackTrace(this, this.constructor); // When a new object is created this method will not appear in the stack trace
+  }
+}
+
+module.exports = AppError;
