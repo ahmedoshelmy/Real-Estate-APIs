@@ -1,7 +1,6 @@
 const express = require('express');
 
 const propertyRouter = require('./routes/propertyRoutes'); // Route for properties (requests and ads)
-const userRouter = require('./routes/userRoutes'); // Route for users
 const adsRouter = require('./routes/adRoutes'); // Route for ads
 const authRouter = require('./routes/authRoutes'); // Route for auth
 const adminRouter = require('./routes/adminRoutes'); // Route for admin
@@ -30,9 +29,6 @@ app.use('/requests', propertyRouter);
 app.use('/ads', adsRouter);
 app.use('/auth', authRouter);
 app.use('/admin', adminRouter);
-
-// Handle user routes
-app.use('/users', userRouter);
 
 app.use(globalErrorHandler);
 
