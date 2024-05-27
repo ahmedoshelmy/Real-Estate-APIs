@@ -82,14 +82,14 @@
 
 ### Property Routes
 
-- `POST /property`: Create Property Request (Client only)
+- `POST /requests`: Create Property Request (Client only)
 
   - Endpoint for creating property requests.
   - Request Body: JSON object containing property request details.
   - Middleware: `isClient` to ensure only clients can access this endpoint.
   - Controller: `propertyController.createPropertyRequest`.
 
-- `PATCH /property/:requestId`: Update Property Request (Client only)
+- `PATCH /requests/:requestId`: Update Property Request (Client only)
 
   - Endpoint for updating existing property requests.
   - Request Parameter: `requestId` - The ID of the property request to update.
