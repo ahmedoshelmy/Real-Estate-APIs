@@ -45,7 +45,8 @@ exports.updateAd = catchAsync(async (req, res) => {
         city,
         district,
         description,
-        userId: req.user.id
+        user: req.user.id,
+        refreshedAt: new Date()
       },
       { new: true }
     ); // Set { new: true } to return the updated document

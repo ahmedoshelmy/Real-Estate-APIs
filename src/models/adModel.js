@@ -14,5 +14,5 @@ const adSchema = new mongoose.Schema({
   user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }
 });
 
-User = mongoose.model('Ad', adSchema); // Model for the tour
-module.exports = User;
+Ad = mongoose.model('Ad', adSchema); // Model for the tour
+module.exports = Ad;

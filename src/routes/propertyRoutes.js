@@ -6,6 +6,6 @@ const router = express.Router();
 
 router.route('/').post(isClient, propertyController.createPropertyRequest); // Endpoint for creating property requests (Client only)
 
-router.route('/:requestId').patch(propertyController.updatePropertyRequest); // Endpoint for updating property requests (Client only)
+router.route('/:requestId').put(isClient, propertyController.updateRequest); // Endpoint for updating property requests (Client only)
 
 module.exports = router;
