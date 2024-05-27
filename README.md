@@ -2,30 +2,23 @@
 
 ## Folder Structure
 
-project-root
-│
-├── controllers
-│ ├── adController.js
-│ ├── authController.js
-│ ├── propertyController.js
-│ └── userController.js
-│
-├── routes
-│ ├── adRoutes.js
-│ ├── authRoutes.js
-│ ├── propertyRoutes.js
-│ └── userRoutes.js
-│
-├── middlewares
-│ ├── authMiddleware.js
-│ ├── errorHandler.js
-│ └── validationMiddleware.js
-│
-└── models
-├── Ad.js
-├── Request.js
-├── User.js
-└── otherModels.js
+- project-root
+  - controllers
+    - adController.js
+    - authController.js
+    - propertyController.js
+    - userController.js
+  - routes
+    - adRoutes.js
+    - authRoutes.js
+    - propertyRoutes.js
+    - userRoutes.js
+  - middlewares
+    - authMiddleware.js
+  - models
+    - Ad.js
+    - Request.js
+    - User.js
 
 ## Instructions to Run the Backend
 
