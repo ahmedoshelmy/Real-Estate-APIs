@@ -18,12 +18,14 @@ project-root
 │
 ├── middlewares
 │ ├── authMiddleware.js
-│ └── authMiddleware.js
+│ ├── errorHandler.js
+│ └── validationMiddleware.js
 │
 └── models
 ├── Ad.js
-├── Property.js
+├── Request.js
 ├── User.js
+└── otherModels.js
 
 ## Instructions to Run the Backend
 
